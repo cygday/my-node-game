@@ -1,5 +1,5 @@
 FROM node:20-alpine
-WORKDIR /number-guessing-game
+WORKDIR /my-node-game
 COPY package*.json ./
 RUN npm install
 COPY . .

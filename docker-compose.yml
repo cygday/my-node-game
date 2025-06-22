@@ -1,0 +1,8 @@
+version: '1.0'
+
+services: 
+  my-node-game:
+    build: .
+    container_name: my-node-game
+    ports:
+      - "3000:3000"

@@ -60,15 +60,15 @@ pipeline {
 
         }
  
-stage('Build Docker Image') {
+        stage('Build Docker Image') {
 
-    steps {
+                steps {
 
-        script {
+                    script {
 
-            echo 'Building Docker image...'
+                        echo 'Building Docker image...'
 
-            sh "docker build -t my-node-game:${BUILD_NUMBER} ."
+                         sh "docker build -t my-node-game:${BUILD_NUMBER} ."
             
         }
 
@@ -168,4 +168,13 @@ stage('Deploy to Prod Env') {
          }
 
 }
- 
+
+
+
+
+
+
+
+
+
+
